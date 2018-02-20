@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.checkerboard {
+    background-color: #4ea08c;
+    background-image:
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%),
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%),
+  
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%),
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%);
+  
+    background-size:25% 25%;
+    background-position:0 0, 50% 50%;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.checkerboard:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.dot {
+  font-size: 0;
+  float: left;
+  width: 8%;
+  height: 8%;
+  border-radius: 50%;
+}
+
+.dot:before {
+  content: '';
+  padding-bottom: 100%;
+  display: inline-block;
+
+}
+
+.yellow {
+  background-color: #ffc000;
+   transition:all .6s ease-in-out;
+}
+
+.yellow:hover {
+   box-shadow:inset 0 0 0 100px #fc9b01;
+}
+
+.x1, .x5 {
+  margin: 2.25% 2.25%;
+}
+
+.x3, .x7 {
+  margin: 2.25% 14.75%;
+}
+
+
+.x2y2, .x6y2 {
+  margin: 2.25% 14.75%;
+}
+
+.x4y2, .x8y2 {
+  margin: 2.25% 2.25%;
+}
+
+
+.x1y3, .x5y3 {
+  margin: 2.25% 2.25%;
+}
+
+.x3y3, .x7y3 {
+  margin: 2.25% 14.75%;
+}
+
+
+.green {
+  background-color: #bfeb60;
+  transition:all .6s ease-in-out;
+}
+
+.green:hover {
+   box-shadow:inset 0 0 0 100px #97d64c;
+}
+
+
+.x2y6, .x6y6 {
+  margin: 27.5% 14.75% 0 ;
+}
+
+.x4y6, .x8y6 {
+  margin: 27.5% 2.25% 0;
+}
+
+.x1y7, .x5y7 {
+  margin: 4.5% 2.25%;
+}
+
+.x3y7, .x7y7 {
+  margin: 4.5% 14.75%;
+}
+
+.x2y8, .x6y8 {
+  margin: 0 14.75%;
+}
+
+.x4y8, .x8y8 {
+  margin: 0 2.25%;
+}
+
